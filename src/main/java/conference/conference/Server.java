@@ -15,7 +15,7 @@ public class Server {
 	public static void main(String[] args){
 		try {
 			ServerSocket server = new ServerSocket(8888);
-			
+			System.out.println("server is up");
 			while(true){
 				Socket client = server.accept();
 				System.out.println("one client");

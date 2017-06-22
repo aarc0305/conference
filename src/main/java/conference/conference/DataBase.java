@@ -17,7 +17,10 @@ public class DataBase {
 	private MongoDatabase mongoDatabase;
 	private MongoCollection<Document> recordCollection;
 	public DataBase(){
+		//MongoClient mongoClient = new MongoClient( "localhost" , 27017 );
 		MongoClient mongoClient = new MongoClient( "localhost" , 27017 );
+
+		
 		MongoDatabase mongoDatabase = mongoClient.getDatabase("conference");
 		System.out.println("Connect to database successfully");
 		try{
